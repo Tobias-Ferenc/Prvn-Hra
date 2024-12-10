@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobikova hra</title>
     <link rel="stylesheet" href="Hra.css">
+    <script src="JS.js"></script>
 </head>
 <body>
     <div>
     <a class="Main"> Vítejte v mojí hře</a>
+   <script>
+    
+
+    function Michal(){
+        document.addEventListener('keydown', (event) => {
+            const key = event.key; 
+            const code = event.code; 
+        
+            console.log(`Stisknutá klávesa: ${key} (code: ${code})`);
+        });
+    }
+    Michal();
+   </script> 
     </div>
 </body>
 </html>
